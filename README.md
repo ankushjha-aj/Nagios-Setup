@@ -70,7 +70,9 @@
 #### Configure NRPE Monitoring
 - sudo mkdir -p /usr/local/nagios/etc/servers
 - sudo nano /usr/local/nagios/etc/servers/nrpe-server.cfg  # Define host and service for second server
-- 
+
+- ![WhatsApp Image 2025-04-05 at 11 00 37_0ffe0284](https://github.com/user-attachments/assets/522c70da-7ac6-4482-ba99-07c22dd26dee)
+
 - sudo nano /usr/local/nagios/etc/nagios.cfg              # Add line: cfg_dir=/usr/local/nagios/etc/servers
 - sudo nano /usr/local/nagios/etc/objects/commands.cfg    # Define NRPE command:
 # Add:
