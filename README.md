@@ -70,7 +70,8 @@
 #### Configure NRPE Monitoring
 - sudo mkdir -p /usr/local/nagios/etc/servers
 - sudo nano /usr/local/nagios/etc/servers/nrpe-server.cfg  # Define host and service for second server
-- sudo nano /usr/local/nagios/etc/nagios.cfg              # Edit: cfg_dir=/usr/local/nagios/etc/servers
+- 
+- sudo nano /usr/local/nagios/etc/nagios.cfg              # Add line: cfg_dir=/usr/local/nagios/etc/servers
 - sudo nano /usr/local/nagios/etc/objects/commands.cfg    # Define NRPE command:
 # Add:
  define command {
