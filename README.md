@@ -73,10 +73,10 @@
 - sudo nano /usr/local/nagios/etc/nagios.cfg              # Edit: cfg_dir=/usr/local/nagios/etc/servers
 - sudo nano /usr/local/nagios/etc/objects/commands.cfg    # Define NRPE command:
 # Add:
-# define command {
-  #   command_name check_nrpe
-  #  command_line $USER1$/check_nrpe -H $HOSTADDRESS$ -c $ARG1$
-# }
+ define command {
+    command_name check_nrpe
+   command_line $USER1$/check_nrpe -H $HOSTADDRESS$ -c $ARG1$
+ }
 
 #### Verify and Restart
 - sudo /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
